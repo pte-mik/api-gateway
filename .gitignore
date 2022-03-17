@@ -1,0 +1,5 @@
+.idea
+vendor
+vhost.conf
+acache/**/*
+**/.DS_store

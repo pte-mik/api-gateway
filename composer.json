@@ -1,0 +1,22 @@
+{
+    "name": "elvis/api",
+    "autoload": {
+        "psr-4": {
+            "ApiGateway\\": "src/"
+        }
+    },
+
+    "authors": [
+        {
+            "name": "Gergely Laborci",
+            "email": "gergely@laborci.hu"
+        }
+    ],
+    "require": {
+        "symfony/http-kernel": "^6.0",
+        "symfony/http-client": "^6.0",
+        "symfony/cache": "^6.0",
+        "atomino/util-attr": "1.*",
+        "atomino/util-code-finder": "1.*"
+    }
+}
