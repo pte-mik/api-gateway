@@ -1,5 +1,5 @@
 .idea
 vendor
 vhost.conf
-acache/**/*
+cache/**/*
 **/.DS_store

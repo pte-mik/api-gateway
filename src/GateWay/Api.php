@@ -17,8 +17,10 @@ class Api {
 		$request = Request::createFromGlobals();
 		$path = trim($request->getPathInfo(), '/');
 		$method = $request->getMethod();
+		$key = md5($method . '::' . $path);
+		if($request->headers->has("no-cache")) $cache->deleteItem($key);
 
-		$response = $cache->get(md5($method . '::' . $path), function (ItemInterface $item) use ($method, $path, $routes, $request) {
+		$response = $cache->get($key, function (ItemInterface $item) use ($method, $path, $routes, $request) {
 			if (!array_key_exists($method, $routes)) return false;
 			foreach ($routes[$method] as $pathPattern => $handler) {
 				if (preg_match($handler["pattern"], $path, $matches)) {
