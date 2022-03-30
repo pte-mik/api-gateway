@@ -4,8 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1ba8b94dc8d0fc13168571ec6afdc5b",
+    "content-hash": "740f567f934f8fed130ac3af7b88983c",
     "packages": [
+        {
+            "name": "atomino/mosaic",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atomino-framework/mosaic.git",
+                "reference": "be4aa87b7ce375e4a513f6ecbd1ea8161c2f5674"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atomino-framework/mosaic/zipball/be4aa87b7ce375e4a513f6ecbd1ea8161c2f5674",
+                "reference": "be4aa87b7ce375e4a513f6ecbd1ea8161c2f5674",
+                "shasum": ""
+            },
+            "require": {
+                "atomino/util-attr": "1.*",
+                "atomino/util-code-finder": "1.*",
+                "symfony/cache": "^6.0",
+                "symfony/http-client": "^6.0",
+                "symfony/http-kernel": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Atomino\\Mosaic\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gergely Laborci",
+                    "email": "gergely@laborci.hu"
+                }
+            ],
+            "description": "Atomino Mosaic",
+            "keywords": [
+                "api"
+            ],
+            "support": {
+                "issues": "https://github.com/atomino-framework/mosaic/issues",
+                "source": "https://github.com/atomino-framework/mosaic/tree/1.0.0"
+            },
+            "time": "2022-03-30T16:38:51+00:00"
+        },
         {
             "name": "atomino/util-attr",
             "version": "1.0",
